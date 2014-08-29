@@ -73,7 +73,7 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :concerts, "Concerts", concerts_path
     primary.item :video, "Video", videos_path
     primary.item :divider_before_info, '#', divider: true
-    primary.item :info, {icon: "fa fa-fw fa-book", title: "Info"}, info_index_path, split: true do |info_nav|
+    primary.item :info, {icon: "fa fa-fw fa-book", text: "Info"}, info_index_path, split: true do |info_nav|
       info_nav.item :main_info_page, "Main info page", info_path(:main_info_page)
       info_nav.item :about_info_page, "About", info_path(:about_info_page)
       info_nav.item :misc_info_pages, "Misc." do |misc_page|
